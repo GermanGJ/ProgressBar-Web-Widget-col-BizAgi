@@ -1,7 +1,7 @@
 [
   {
     "id": "GbHJw3wRD",
-    "name": "Scenario",
+    "name": "Scenario Default",
     "properties": {
       "properties": {
         "id": "5724b322-e282-4b20-a225-82c0f5c39571",
@@ -133,7 +133,301 @@
               "celleditable": "huuIX2YPh",
               "cellvisible": "d0AVwyMZY",
               "heightControl": "20px",
-              "widthControl": "100%"
+              "widthControl": "100%",
+              "borderRadius": "dSjycbsuM",
+              "animationSpeed": 811,
+              "containerBackColor": "A8fNWflZA",
+              "containerBoxShadow": "y3FJW4VMc"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "qXJXbQpEZ",
+    "name": "Scenario BorderRadius 0",
+    "properties": {
+      "properties": {
+        "id": "5724b322-e282-4b20-a225-82c0f5c39571",
+        "type": "grid",
+        "xpath": "widget.grid",
+        "displayName": "Rows",
+        "helpText": "",
+        "submitOnChange": true,
+        "data": {
+          "records": 2,
+          "total": 1,
+          "rows": [
+            [
+              201,
+              479,
+              "c4QIuw7Y3",
+              "VL5CMeS6b",
+              "90"
+            ],
+            [
+              204,
+              281,
+              "9uCbMqJnx",
+              "6w1LPBiuk",
+              "5"
+            ]
+          ],
+          "editable": [
+            [
+              201,
+              true,
+              true,
+              true
+            ],
+            [
+              204,
+              true,
+              true,
+              true
+            ]
+          ],
+          "visible": [
+            [
+              201,
+              true,
+              true,
+              true
+            ],
+            [
+              204,
+              true,
+              true,
+              true
+            ]
+          ],
+          "page": 1
+        }
+      },
+      "elements": [
+        {
+          "render": {
+            "properties": {
+              "id": "b208b18c-bb94-43fe-9a52-5bca2e1876bb",
+              "type": "columnNumber",
+              "xpath": "widget.property1",
+              "xpath-column": "widget.property1",
+              "displayName": "age",
+              "dataType": 2,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "a8d9ee2d-4920-4a4d-845a-8967fa52ec49",
+              "type": "columnButton",
+              "xpath-column": "widget.property2",
+              "displayName": "columnbutton",
+              "submitOnChange": false,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true,
+              "preventDefault": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "f0d5e459-2993-4a68-9672-b3583cae118b",
+              "type": "columnText",
+              "xpath": "widget.property3",
+              "xpath-column": "widget.property3",
+              "displayName": "name",
+              "maxLength": 50,
+              "dataType": 15,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "15610730-a8c1-42dd-925a-11f9f783ba1d",
+              "userfieldGuid": "41c56e22-68bd-425b-b20f-e0f7fd7e17eb",
+              "type": "columnUserfield",
+              "control": "ProgressBarColumn",
+              "xpath-column": "widget.property4",
+              "xpath": "widget.property4",
+              "displayName": "ProgressBarColumn",
+              "designMode": false,
+              "extendedData": "",
+              "visible": true,
+              "editable": true,
+              "required": true,
+              "displayType": "value",
+              "labelAlign": "5i6gQKTkx",
+              "valueAlign": "4RkgBiazg",
+              "labelWidth": 612,
+              "valueWidth": 505,
+              "celleditable": "XNJWPh5BI",
+              "cellvisible": "I5p0Yo7zR",
+              "heightControl": "20px",
+              "widthControl": "100%",
+              "borderRadius": "0px",
+              "animationSpeed": 208,
+              "containerBackColor": "Ux1kmklWk",
+              "containerBoxShadow": "O877WVoX0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "JD3IIigaK",
+    "name": "Scenario Speed",
+    "properties": {
+      "properties": {
+        "id": "5724b322-e282-4b20-a225-82c0f5c39571",
+        "type": "grid",
+        "xpath": "widget.grid",
+        "displayName": "Rows",
+        "helpText": "",
+        "submitOnChange": true,
+        "data": {
+          "records": 2,
+          "total": 1,
+          "rows": [
+            [
+              201,
+              121,
+              "ODIsKIXiC",
+              "OzjnGQNVW",
+              "90"
+            ],
+            [
+              204,
+              838,
+              "OUBdqVt60",
+              "kGCAfAWQ7",
+              "45"
+            ]
+          ],
+          "editable": [
+            [
+              201,
+              true,
+              true,
+              true
+            ],
+            [
+              204,
+              true,
+              true,
+              true
+            ]
+          ],
+          "visible": [
+            [
+              201,
+              true,
+              true,
+              true
+            ],
+            [
+              204,
+              true,
+              true,
+              true
+            ]
+          ],
+          "page": 1
+        }
+      },
+      "elements": [
+        {
+          "render": {
+            "properties": {
+              "id": "b208b18c-bb94-43fe-9a52-5bca2e1876bb",
+              "type": "columnNumber",
+              "xpath": "widget.property1",
+              "xpath-column": "widget.property1",
+              "displayName": "age",
+              "dataType": 2,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "a8d9ee2d-4920-4a4d-845a-8967fa52ec49",
+              "type": "columnButton",
+              "xpath-column": "widget.property2",
+              "displayName": "columnbutton",
+              "submitOnChange": false,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true,
+              "preventDefault": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "f0d5e459-2993-4a68-9672-b3583cae118b",
+              "type": "columnText",
+              "xpath": "widget.property3",
+              "xpath-column": "widget.property3",
+              "displayName": "name",
+              "maxLength": 50,
+              "dataType": 15,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "15610730-a8c1-42dd-925a-11f9f783ba1d",
+              "userfieldGuid": "41c56e22-68bd-425b-b20f-e0f7fd7e17eb",
+              "type": "columnUserfield",
+              "control": "ProgressBarColumn",
+              "xpath-column": "widget.property4",
+              "xpath": "widget.property4",
+              "displayName": "ProgressBarColumn",
+              "designMode": false,
+              "extendedData": "",
+              "visible": true,
+              "editable": true,
+              "required": true,
+              "displayType": "value",
+              "labelAlign": "2OYH0SApg",
+              "valueAlign": "9GBQHnJth",
+              "labelWidth": 133,
+              "valueWidth": 890,
+              "celleditable": "2Kg8ohAjn",
+              "cellvisible": "y07DtRL80",
+              "heightControl": "20px",
+              "widthControl": "100%",
+              "borderRadius": "0px",
+              "animationSpeed": "7",
+              "containerBackColor": "#5a2020",
+              "containerBoxShadow": "#c74d4d"
             }
           }
         }

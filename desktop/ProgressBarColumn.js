@@ -28,17 +28,22 @@ bizagi.rendering.basicUserField.extend("bizagi.rendering.ProgressBarColumn",{}, 
         eleCtrlProgBar.style.height = properties.heightControl || '20px';
         eleCtrlProgBar.style.width = properties.widthControl || '100%';
         
-        
-        
         // Crear div de la barra completa de progreso.
         const eleProgressBar = document.createElement("div"); 
         eleProgressBar.classList.add("barra_progreso");
         eleProgressBar.setAttribute('id', 'barra_progreso');
+        eleProgressBar.style.borderRadius = properties.borderRadius || '20px';
+        eleProgressBar.style.backgroundColor = properties.containerBackColor || '#5a2020';
+        eleProgressBar.style.boxShadow = properties.containerBoxShadow || '#c74d4d';
         
+        
+     
         // Crear div del progreso.
         const eleProgress = document.createElement("div");
         eleProgress.classList.add("progreso");
         eleProgress.setAttribute('id', 'progreso');
+        eleProgress.style.borderRadius = properties.borderRadius || '20px';
+        
         
         // Crear div valor del progreso en nunmeros.
         const elePprogessVal = document.createElement("div");
@@ -50,15 +55,14 @@ bizagi.rendering.basicUserField.extend("bizagi.rendering.ProgressBarColumn",{}, 
         eleProgressBar.append(eleProgress);
         eleProgress.append(elePprogessVal);
         
-        /*
-        eleProgressBar = document.getElementById('barra_progreso');
-        eleProgress = document.getElementById('progreso');
-        eleProgress = document.getElementById('porcentaje');
-        */
-        
+
+    
+        let vel = properties.animationSpeed || 7;
+        vel = (((vel - 10) * (-1)) * 20);
+    
         let cantidad = 0;
         let totalPorcentaje = eleProgress.innerText;
-
+        
         let tiempo = setInterval(() => {
             cantidad += 1;
             eleProgress.style.width = cantidad + "%";
@@ -70,46 +74,10 @@ bizagi.rendering.basicUserField.extend("bizagi.rendering.ProgressBarColumn",{}, 
 
             eleProgress.textContent = cantidad + "%";
 
-        }, 70);
+        }, vel);
         
         
         return self.myinput;
-        
-
-        //if no display name is explictly defined, use the following default text
-        /*
-        var bindedXpathValue = properties.value || "Hello World, I am a Widget";
-        */
-
-        //you can do slightly different things in design mode or in runtime
-        /*
-        if (properties.designMode)
-            bindedXpathValue = bindedXpathValue + " previewed in the Forms designer";
-        else
-            bindedXpathValue = bindedXpathValue + " running at the Work portal";
-        */
-
-        //self is our base. The Widget control is defined in this case, containing a <div> HTML element.
-        /*
-        self.myinput = $("<div>");
-        */
-
-        //we can add up any number of inner elements to the control
-        /*
-        self.myinput.append("<h2>" + bindedXpathValue + " (desktop version) </h2>");
-        
-        var img_element = $("<img src='http://www.bizagi.com/images/branding/logo_blue.png' alt=''/>");
-        self.myinput.append(img_element);
-        */
-
-        //define a class for your element so that appearance is customizable from the CSS style sheet.
-        /*
-        self.myinput.addClass("ProgressBarColumn_MainDivClass");
-        */
-
-        //always return the control
-        //self.setValue( properties.value || "Hello World, I am a Widget");
-        //return self.myinput;
     }
 
 });

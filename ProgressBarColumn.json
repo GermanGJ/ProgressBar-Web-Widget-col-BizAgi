@@ -222,33 +222,11 @@
           }
         }
       },
-      "xpath": {
-        "bas-type": "xpath-to-simple",
-        "caption": {
-          "default": "Data Binding",
-          "languages": [
-            {
-              "es": "Mapeo de datos"
-            }
-          ]
-        },
-        "required": true,
-        "main": true,
-        "editor-parameters": {
-          "types": [
-            "string"
-          ]
-        },
-        "subproperties": {
-          "xpath": {
-            "bas-type": "xpath"
-          }
-        }
-      },
       "xpathDefault": {
         "bas-type": "defaultvalue",
         "editor-parameters": {
-          "type": "string",
+          "type": "number",
+          "allowdecimals": true,
           "exclusive": true
         },
         "caption": {
@@ -261,7 +239,7 @@
         },
         "subproperties": {
           "fixedvalue": {
-            "bas-type": "string",
+            "bas-type": "number",
             "caption": {
               "default": "Fixed",
               "languages": [
@@ -314,6 +292,75 @@
           "languages": [
             {
               "en": "Width Control"
+            }
+          ]
+        }
+      },
+      "borderRadius": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Border Radius",
+          "languages": [
+            {
+              "en": "Border Radius"
+            }
+          ]
+        }
+      },
+      "xpath": {
+        "bas-type": "xpath-to-simple",
+        "caption": {
+          "default": "Data Binding",
+          "languages": [
+            {
+              "es": "Mapeo de datos"
+            }
+          ]
+        },
+        "required": true,
+        "main": true,
+        "editor-parameters": {
+          "types": [
+            "number"
+          ]
+        },
+        "subproperties": {
+          "xpath": {
+            "bas-type": "xpath"
+          }
+        }
+      },
+      "animationSpeed": {
+        "bas-type": "int",
+        "caption": {
+          "default": "Animation Speed",
+          "languages": [
+            {
+              "en": "Animation Speed"
+            }
+          ]
+        },
+        "required": true,
+        "default": "10"
+      },
+      "containerBackColor": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Container Background Color",
+          "languages": [
+            {
+              "en": "Container Background Color"
+            }
+          ]
+        }
+      },
+      "containerBoxShadow": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Container Box Shadow",
+          "languages": [
+            {
+              "en": "Container Box Shadow"
             }
           ]
         }
@@ -372,7 +419,16 @@
               {
                 "type": "property",
                 "value": "cellvisible"
-              },
+              }
+            ]
+          },
+          {
+            "id": "new1670386273584",
+            "caption": {
+              "default": "Style",
+              "languajes": []
+            },
+            "elements": [
               {
                 "type": "property",
                 "value": "heightControl"
@@ -380,6 +436,31 @@
               {
                 "type": "property",
                 "value": "widthControl"
+              },
+              {
+                "type": "property",
+                "value": "borderRadius"
+              },
+              {
+                "type": "property",
+                "value": "animationSpeed"
+              }
+            ]
+          },
+          {
+            "id": "new1670389685309",
+            "caption": {
+              "default": "Colors",
+              "languajes": []
+            },
+            "elements": [
+              {
+                "type": "property",
+                "value": "containerBackColor"
+              },
+              {
+                "type": "property",
+                "value": "containerBoxShadow"
               }
             ]
           }
@@ -510,16 +591,6 @@
         "async": "true"
       },
       {
-        "name": "xpath",
-        "type": "xpath",
-        "metavalue": "<design:xpath:xpath>"
-      },
-      {
-        "name": "xpath-column",
-        "type": "string",
-        "metavalue": "<design:xpath:xpath>"
-      },
-      {
         "name": "heightControl",
         "type": "lstring",
         "metavalue": "<design:heightControl>",
@@ -532,6 +603,44 @@
         "metavalue": "<design:widthControl>",
         "depends": "<design:widthControl>",
         "designvalue": "<design:widthControl>"
+      },
+      {
+        "name": "borderRadius",
+        "type": "lstring",
+        "metavalue": "<design:borderRadius>",
+        "depends": "<design:borderRadius>",
+        "designvalue": "<design:borderRadius>"
+      },
+      {
+        "name": "xpath",
+        "type": "xpath",
+        "metavalue": "<design:xpath:xpath>"
+      },
+      {
+        "name": "xpath-column",
+        "type": "string",
+        "metavalue": "<design:xpath:xpath>"
+      },
+      {
+        "name": "animationSpeed",
+        "type": "int",
+        "metavalue": "<design:animationSpeed>",
+        "depends": "<design:animationSpeed>",
+        "designvalue": "<design:animationSpeed>"
+      },
+      {
+        "name": "containerBackColor",
+        "type": "lstring",
+        "metavalue": "<design:containerBackColor>",
+        "depends": "<design:containerBackColor>",
+        "designvalue": "<design:containerBackColor>"
+      },
+      {
+        "name": "containerBoxShadow",
+        "type": "lstring",
+        "metavalue": "<design:containerBoxShadow>",
+        "depends": "<design:containerBoxShadow>",
+        "designvalue": "<design:containerBoxShadow>"
       }
     ],
     "decision-table": [
