@@ -1,0 +1,42 @@
+.ProgressBarColumn_MainDivClass
+{
+	text-align: center;
+}
+
+.control-progressBar {
+    background: #01000000;
+    height: 20px;                   /* heiProgress */
+    width: 100px;                   /* widProgress */ 
+    display: flex;
+    align-items: center;
+}
+
+.barra_progreso {
+    position: relative;
+    padding: 1px;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    box-shadow: inset 6px 6px 12px #a35151,
+        inset -6px -6px 12px #c74d4d;
+    background-color: #5a2020;
+    border-radius: 20px;            /* border_r */
+}
+
+.progreso {
+    height: 100%;
+    width: 0;
+    background-color: #4dd841;
+    box-shadow: 0 0 10px #4dd841,
+        0 0 20px #4dd841;
+    display: block;
+    border-radius: 20px;            /* border_r */
+}
+
+#porcentaje {
+    font-size: 75%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translateX(10px);        /* traslateX */ 
+    color: #1a0b0b;
+    margin-bottom: auto;
+}

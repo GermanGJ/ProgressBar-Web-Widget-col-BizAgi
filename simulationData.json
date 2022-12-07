@@ -1,0 +1,141 @@
+[
+  {
+    "id": "GbHJw3wRD",
+    "name": "Scenario",
+    "properties": {
+      "properties": {
+        "id": "5724b322-e282-4b20-a225-82c0f5c39571",
+        "type": "grid",
+        "xpath": "widget.grid",
+        "displayName": "Rows",
+        "helpText": "",
+        "submitOnChange": true,
+        "data": {
+          "records": 2,
+          "total": 1,
+          "rows": [
+            [
+              201,
+              72,
+              "cYlIDzaG9",
+              "irQm3QZzs",
+              "80"
+            ],
+            [
+              204,
+              128,
+              "rHwDxdJJO",
+              "GEf3ergyW",
+              "45"
+            ]
+          ],
+          "editable": [
+            [
+              201,
+              true,
+              true,
+              true
+            ],
+            [
+              204,
+              true,
+              true,
+              true
+            ]
+          ],
+          "visible": [
+            [
+              201,
+              true,
+              true,
+              true
+            ],
+            [
+              204,
+              true,
+              true,
+              true
+            ]
+          ],
+          "page": 1
+        }
+      },
+      "elements": [
+        {
+          "render": {
+            "properties": {
+              "id": "b208b18c-bb94-43fe-9a52-5bca2e1876bb",
+              "type": "columnNumber",
+              "xpath": "widget.property1",
+              "xpath-column": "widget.property1",
+              "displayName": "age",
+              "dataType": 2,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "a8d9ee2d-4920-4a4d-845a-8967fa52ec49",
+              "type": "columnButton",
+              "xpath-column": "widget.property2",
+              "displayName": "columnbutton",
+              "submitOnChange": false,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true,
+              "preventDefault": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "f0d5e459-2993-4a68-9672-b3583cae118b",
+              "type": "columnText",
+              "xpath": "widget.property3",
+              "xpath-column": "widget.property3",
+              "displayName": "name",
+              "maxLength": 50,
+              "dataType": 15,
+              "totalize": {
+                "format": {}
+              },
+              "hasTotalizer": true
+            }
+          }
+        },
+        {
+          "render": {
+            "properties": {
+              "id": "15610730-a8c1-42dd-925a-11f9f783ba1d",
+              "userfieldGuid": "41c56e22-68bd-425b-b20f-e0f7fd7e17eb",
+              "type": "columnUserfield",
+              "control": "ProgressBarColumn",
+              "xpath-column": "widget.property4",
+              "xpath": "widget.property4",
+              "displayName": "ProgressBarColumn",
+              "designMode": false,
+              "extendedData": "",
+              "visible": true,
+              "editable": true,
+              "required": true,
+              "displayType": "value",
+              "labelAlign": "LDBO5zf4w",
+              "valueAlign": "78sFX8Hq1",
+              "labelWidth": 12,
+              "valueWidth": 628,
+              "celleditable": "huuIX2YPh",
+              "cellvisible": "d0AVwyMZY"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
