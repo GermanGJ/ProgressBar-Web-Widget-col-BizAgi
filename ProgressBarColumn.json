@@ -364,6 +364,39 @@
             }
           ]
         }
+      },
+      "progressBackColor": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Progress Background Color",
+          "languages": [
+            {
+              "en": "Progress Background Color"
+            }
+          ]
+        }
+      },
+      "progressBoxShadow": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Progress Box Shadow",
+          "languages": [
+            {
+              "en": "Progress Box Shadow"
+            }
+          ]
+        }
+      },
+      "progressNumColor": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Progress Numero Color",
+          "languages": [
+            {
+              "en": "Progress Numero Color"
+            }
+          ]
+        }
       }
     },
     "visual": {
@@ -461,6 +494,18 @@
               {
                 "type": "property",
                 "value": "containerBoxShadow"
+              },
+              {
+                "type": "property",
+                "value": "progressBackColor"
+              },
+              {
+                "type": "property",
+                "value": "progressBoxShadow"
+              },
+              {
+                "type": "property",
+                "value": "progressNumColor"
               }
             ]
           }
@@ -641,6 +686,27 @@
         "metavalue": "<design:containerBoxShadow>",
         "depends": "<design:containerBoxShadow>",
         "designvalue": "<design:containerBoxShadow>"
+      },
+      {
+        "name": "progressBackColor",
+        "type": "lstring",
+        "metavalue": "<design:progressBackColor>",
+        "depends": "<design:progressBackColor>",
+        "designvalue": "<design:progressBackColor>"
+      },
+      {
+        "name": "progressBoxShadow",
+        "type": "lstring",
+        "metavalue": "<design:progressBoxShadow>",
+        "depends": "<design:progressBoxShadow>",
+        "designvalue": "<design:progressBoxShadow>"
+      },
+      {
+        "name": "progressNumColor",
+        "type": "lstring",
+        "metavalue": "<design:progressNumColor>",
+        "depends": "<design:progressNumColor>",
+        "designvalue": "<design:progressNumColor>"
       }
     ],
     "decision-table": [
