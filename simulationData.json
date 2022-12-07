@@ -119,7 +119,7 @@
               "control": "ProgressBarColumn",
               "xpath-column": "widget.property4",
               "xpath": "widget.property4",
-              "displayName": "ProgressBarColumn",
+              "displayName": "Progress",
               "designMode": false,
               "extendedData": "",
               "visible": true,
@@ -131,7 +131,9 @@
               "labelWidth": 12,
               "valueWidth": 628,
               "celleditable": "huuIX2YPh",
-              "cellvisible": "d0AVwyMZY"
+              "cellvisible": "d0AVwyMZY",
+              "heightControl": "20px",
+              "widthControl": "100%"
             }
           }
         }

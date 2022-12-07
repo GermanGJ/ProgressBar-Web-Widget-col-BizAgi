@@ -36,7 +36,7 @@
 #porcentaje {
     font-size: 75%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transform: translateX(10px);        /* traslateX */ 
+    transform: translateX(100px);        /* traslateX */ 
     color: #1a0b0b;
-    margin-bottom: auto;
+    /*margin-bottom: auto;*/
 }

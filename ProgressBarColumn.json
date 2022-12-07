@@ -13,28 +13,6 @@
   "rendertype": "userfield",
   "design": {
     "properties": {
-      "xpath": {
-        "bas-type": "xpath-to-simple",
-        "editor-parameters": {
-          "types": [
-            "string"
-          ]
-        },
-        "caption": {
-          "default": "Data Binding",
-          "languages": [
-            {
-              "es": "Mapeo de datos"
-            }
-          ]
-        },
-        "required": true,
-        "subproperties": {
-          "xpath": {
-            "bas-type": "xpath"
-          }
-        }
-      },
       "displayName": {
         "bas-type": "localizable-string",
         "caption": {
@@ -243,6 +221,102 @@
             "bas-type": "rule"
           }
         }
+      },
+      "xpath": {
+        "bas-type": "xpath-to-simple",
+        "caption": {
+          "default": "Data Binding",
+          "languages": [
+            {
+              "es": "Mapeo de datos"
+            }
+          ]
+        },
+        "required": true,
+        "main": true,
+        "editor-parameters": {
+          "types": [
+            "string"
+          ]
+        },
+        "subproperties": {
+          "xpath": {
+            "bas-type": "xpath"
+          }
+        }
+      },
+      "xpathDefault": {
+        "bas-type": "defaultvalue",
+        "editor-parameters": {
+          "type": "string",
+          "exclusive": true
+        },
+        "caption": {
+          "default": "Default value",
+          "languages": [
+            {
+              "es": "Valor por defecto"
+            }
+          ]
+        },
+        "subproperties": {
+          "fixedvalue": {
+            "bas-type": "string",
+            "caption": {
+              "default": "Fixed",
+              "languages": [
+                {
+                  "es": "Fijo"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "bas-type": "rule",
+            "caption": {
+              "default": "Rule",
+              "languages": [
+                {
+                  "es": "Regla"
+                }
+              ]
+            }
+          },
+          "rule90": {
+            "bas-type": "rule",
+            "caption": {
+              "default": "Rule",
+              "languages": [
+                {
+                  "es": "Regla"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "heightControl": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Height Control",
+          "languages": [
+            {
+              "en": "Height Control"
+            }
+          ]
+        },
+        "required": false
+      },
+      "widthControl": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Width Control",
+          "languages": [
+            {
+              "en": "Width Control"
+            }
+          ]
+        }
       }
     },
     "visual": {
@@ -277,6 +351,10 @@
               },
               {
                 "type": "property",
+                "value": "xpathDefault"
+              },
+              {
+                "type": "property",
                 "value": "visible"
               },
               {
@@ -294,6 +372,14 @@
               {
                 "type": "property",
                 "value": "cellvisible"
+              },
+              {
+                "type": "property",
+                "value": "heightControl"
+              },
+              {
+                "type": "property",
+                "value": "widthControl"
               }
             ]
           }
@@ -320,16 +406,6 @@
         "type": "string",
         "metavalue": "columnUserfield",
         "designvalue": "columnUserfield"
-      },
-      {
-        "name": "xpath",
-        "type": "string",
-        "metavalue": "<design:xpath:xpath>"
-      },
-      {
-        "name": "xpath-column",
-        "type": "string",
-        "metavalue": "<design:xpath:xpath>"
       },
       {
         "name": "control",
@@ -432,6 +508,30 @@
         "type": "<decision-table:dt-cellpropertyvisible:type>",
         "metavalue": "<decision-table:dt-cellpropertyvisible:value>",
         "async": "true"
+      },
+      {
+        "name": "xpath",
+        "type": "xpath",
+        "metavalue": "<design:xpath:xpath>"
+      },
+      {
+        "name": "xpath-column",
+        "type": "string",
+        "metavalue": "<design:xpath:xpath>"
+      },
+      {
+        "name": "heightControl",
+        "type": "lstring",
+        "metavalue": "<design:heightControl>",
+        "depends": "<design:heightControl>",
+        "designvalue": "<design:heightControl>"
+      },
+      {
+        "name": "widthControl",
+        "type": "lstring",
+        "metavalue": "<design:widthControl>",
+        "depends": "<design:widthControl>",
+        "designvalue": "<design:widthControl>"
       }
     ],
     "decision-table": [
@@ -449,6 +549,7 @@
           "rule": "<design:cellvisible:rule>"
         }
       }
-    ]
+    ],
+    "decision-tables-overrides": []
   }
 }

@@ -20,10 +20,15 @@ bizagi.rendering.basicUserField.extend("bizagi.rendering.ProgressBarColumn",{}, 
         var bindedXpathValue = properties.value || 75;
         
         self.myinput = $("<div>");
+        self.myinput.addClass("ProgressBarColumn_MainDivClass");
         
         // Crear div principal de control.
         const eleCtrlProgBar = document.createElement("div"); 
         eleCtrlProgBar.classList.add("control-progressBar");
+        eleCtrlProgBar.style.height = properties.heightControl || '20px';
+        eleCtrlProgBar.style.width = properties.widthControl || '100%';
+        
+        
         
         // Crear div de la barra completa de progreso.
         const eleProgressBar = document.createElement("div"); 
